@@ -1,7 +1,7 @@
 var express = require('express');
 var logger = require('./tools/logger');
 
-logger.info(`🍻 Weibo2RSS start! Cheers!`);
+logger.info(`Weibo2RSS start! Cheers!`);
 
 var app = express();
 app.all('*', require('./routes/all'));
