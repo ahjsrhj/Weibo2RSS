@@ -84,7 +84,7 @@ module.exports = function (req, res) {
                             if (wbs[j].emotion < 0) {
                                 rss +=`
 <item>
-    <title><![CDATA[你关注的博主@${name} 发布了情绪值为${(wbs[j].emotion * 100).toFixed(4)}%的疑似消极情绪微博，快去关心一下吧：「${wbs[j].title}」]]></title>
+    <title><![CDATA[你的你票@${name} 发布了情绪值为${(wbs[j].emotion * 100).toFixed(4)}%的疑似消极情绪微博，快去关心一下吧：「${wbs[j].title}」]]></title>
     <description><![CDATA[${wbs[j].description}]]></description>
     <pubDate>${wbs[j].pubDate}</pubDate>
     <guid>${wbs[j].link}</guid>
